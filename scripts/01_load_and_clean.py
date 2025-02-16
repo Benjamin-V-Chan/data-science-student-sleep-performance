@@ -1,13 +1,15 @@
-# 01_load_and_clean.py
+import pandas as pd
+from sklearn.preprocessing import LabelEncoder
 
-# Import necessary libraries
-
-# Load the dataset
+# Load dataset
+df = pd.read_csv("data/sleep_deprivation_dataset_detailed.csv")
 
 # Check for missing values
+df = df.dropna()
 
-# Handle missing values (if any)
+# Encode categorical variables
+encoder = LabelEncoder()
+df["Gender"] = encoder.fit_transform(df["Gender"])
 
-# Convert categorical variables if needed (e.g., encoding Gender)
-
-# Save the cleaned dataset
+# Save cleaned dataset
+df.to_csv("data/cleaned_sleep_data.csv", index=False)
