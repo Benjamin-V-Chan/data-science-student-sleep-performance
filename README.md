@@ -1,7 +1,5 @@
 # data-science-student-sleep-performance
 
-# Sleep Deprivation & Cognitive Performance Analysis
-
 ## Project Overview
 This project explores the impact of sleep deprivation on cognitive performance using statistical analysis, correlation studies, and machine learning models. The dataset includes sleep hours, cognitive test scores, and other behavioral factors.
 
